@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: sample.BookServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.493 sec - in sample.BookServiceTest
