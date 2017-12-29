@@ -3,7 +3,7 @@ package sample;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-@Document(indexName = "mkyong", type = "books")
+@Document(indexName = "indexSeach", type = "books")
 public class Book {
 
     @Id

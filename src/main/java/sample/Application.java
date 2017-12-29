@@ -35,12 +35,12 @@ public class Application implements CommandLineRunner {
 
         printElasticSearchInfo();
 
-        bookService.save(new Book("1001", "Elasticsearch Basics", "Rambabu Posa", "23-FEB-2017"));
-        bookService.save(new Book("1002", "Apache Lucene Basics", "Rambabu Posa", "13-MAR-2017"));
-        bookService.save(new Book("1003", "Apache Solr Basics", "Rambabu Posa", "21-MAR-2017"));
+        bookService.save(new Book("1001", "Elasticsearch Basics", "Nhat Thai", "23-FEB-2017"));
+        bookService.save(new Book("1002", "Apache Lucene Basics", "Nhat Thai", "13-MAR-2017"));
+        bookService.save(new Book("1003", "Apache Solr Basics", "Nhat Thai", "21-MAR-2017"));
 
         //fuzzey search
-        Page<Book> books = bookService.findByAuthor("Rambabu", new PageRequest(0, 10));
+        Page<Book> books = bookService.findByAuthor("Nhat", new PageRequest(0, 10));
         books.forEach(x -> System.out.println(x));
 
         System.out.println("Find books by Title");
